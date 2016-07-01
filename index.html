@@ -1,0 +1,12 @@
+<script>
+var isLink = window.location.pathname.substr(-4) !== "text"
+var subs = [
+	"GodEmperorDonald",
+	"Donald4Prez",
+	"The_Donald",
+	"VoteForDonald"
+]
+var sub = subs[Math.random()*4|0]
+var newLink = "https://reddit.com/r/"+sub+"/submit"	+ (isLink ? "" : "?selftext=true")
+window.location.href = newLink
+</script>
